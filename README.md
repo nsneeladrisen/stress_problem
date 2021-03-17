@@ -7,7 +7,7 @@ Installing and importing MMTK is the problem
 
 ## System
 
-MacOS- BigSur 11.23
+CS cluster
 
 ## Installing MMTK from the mmtk git
 
@@ -33,7 +33,7 @@ The problem persists. Additionally the current version of scientific python shou
 ## Installing using mmtk_install
 
 The installation section of https://github.com/khinsen/mmtk says unix users can automaticall install using https://github.com/roygroup/mmtk_install
-mmtk is installed in /Users/neeladrisen/.mmtk
+mmtk is installed in /home/neelsen/.local/lib/python2.7/site-packages/.mmtk
 
 ## Problem
 While running stress
@@ -47,5 +47,5 @@ ImportError: No module named MMTK
 ## Tried
 Adding the following line tp calpha_modes.py before importing MMTK
 ```
-sys.path.append(r'/Users/neeladrisen/.mmtk')
+sys.path.append('/home/neelsen/.local/lib/python2.7/site-packages/.mmtk')
 ```
